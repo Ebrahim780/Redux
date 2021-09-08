@@ -1,20 +1,14 @@
 import React from 'react';
-import { createStore } from 'redux';
-import Counter from './Practice/components/counter'
-import counter from './Practice/reducers/reducers'
-import reactDom from 'react-dom';
-import './index.css'
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-const store = createStore(counter)
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-const render = () => reactDom.render(
-  <Counter
-    value = {store.getState()}
-    increment={() => store.dispatch({ type: 'INCREMENT' })}
-    decrement={() => store.dispatch({ type: 'DECREMENT' })}
-  />, document.getElementById('root')
-)
-
-render()
-
-store.subscribe(render)
+reportWebVitals();
