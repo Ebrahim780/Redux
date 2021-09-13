@@ -16,6 +16,7 @@ body {
   margin                 : 0;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
 }
 
 code {
@@ -29,11 +30,17 @@ textarea {
 }
 
 ul,
-ol {
+ol,
+li {
   list-style: none;
 }
 
 button {
   margin: 0 10px;
   cursor: pointer;
+  transition: .3s;
+}
+
+button:active {
+  transform: scale(.9);
 }
