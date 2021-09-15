@@ -1,6 +1,6 @@
 import * as actions from './actionTypes';
 
-let currentId = 0;
+export let currentId = 0;
 
 const Reducer = (state = [], action) => {
     switch (action.type) {
@@ -18,6 +18,9 @@ const Reducer = (state = [], action) => {
             
         case actions.PUBLISH_BOOK:
             return state.map( book => book.id !== action.payload.id ? book : {...book, publish: true})
+            
+        case actions.UNPUBLISH_BOOK:
+            return state.map( book => book.id !== action.payload.id ? book : {...book, publish: false})
 
         default:
             return state

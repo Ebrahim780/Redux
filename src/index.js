@@ -11,10 +11,27 @@
 
 
 // debug
-import { addBug, resolveBug } from "./Practice/debug/action";
-import store from "./Practice/debug/store";
+// import { addBug, resolveBug } from "./Practice/debug/action";
+// import store from "./Practice/debug/store";
 
-store.dispatch(addBug('first bug'))
-store.dispatch(resolveBug(1))
+// store.dispatch(addBug('first bug'))
+// store.dispatch(resolveBug(1))
 
-console.log(store.getState())
+// console.log(store.getState())
+
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
+
+reportWebVitals();

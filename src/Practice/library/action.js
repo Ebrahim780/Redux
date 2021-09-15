@@ -26,3 +26,12 @@ export const publishBook = id => {
         }
     }
 }
+
+export const unpublishBook = id => {
+    return {
+        type: actions.UNPUBLISH_BOOK,
+        payload: {
+            id
+        }
+    }
+}
