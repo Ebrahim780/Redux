@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { addBook, publishBook } from '../action';
-import store from '../store';
-import { currentId } from '../reducer';
+import { addBook, publishBook } from '../store/action';
+import store from '../store/store';
+import { currentId } from '../store/reducer';
 
 
 const Form = () => {

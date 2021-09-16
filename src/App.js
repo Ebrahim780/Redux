@@ -1,7 +1,7 @@
 import React from 'react';
 import List from './Practice/library/components/list';
 import Form from './Practice/library/components/form';
-import store from './Practice/library/store'
+import store from './Practice/library/store/store'
 
 const App = () => {
     return (
@@ -13,7 +13,7 @@ const App = () => {
 }
 
 store.subscribe( () => {
-    console.log(store.getState())
+    console.log( store.getState())
 })
 
 export default App;
