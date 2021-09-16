@@ -1,0 +1,82 @@
+{
+"address": "darya Blvd., Tehran, Iran",
+"id": 1,
+"image": "https://postimg.cc/jW3CF94p",
+"name": "Techno Market",
+"products": [
+{
+"id": 1,
+"image": "https://s20.postimg.cc/zdf1frg2h/image-1.jpg",
+"name": "Chi-Toz Cheese Crunch Snack 115 grams",
+"price": 2500
+},
+{
+"id": 2,
+"image": "https://s20.postimg.cc/v4abdkpnt/image-2.jpg",
+"name": "Putta yogurt chips in the amount of 100 grams",
+"price": 7900
+},
+{
+"id": 3,
+"image": "https://s20.postimg.cc/gxukicmih/image-3.jpg",
+"name": "Yogurt chips and shallots 110 g",
+"price": 5800
+},
+{
+"id": 4,
+"image": "https://s20.postimg.cc/de8msjrih/image-4.jpg",
+"name": "Royal Vanilla Cocoa Cake Whisper 90 grams",
+"price": 1500
+},
+{
+"id": 5,
+"image": "https://s20.postimg.cc/a7e38xu7t/image-5.jpg",
+"name": "Halva Ardeh Shukri Eagle 50 grams",
+"price": 1700
+},
+{
+"id": 6,
+"image": "https://s20.postimg.cc/rxfrtzn89/image-6.jpg",
+"name": "Sugar-free dragee gum with mint-flavored biodent",
+"price": 2800
+},
+{
+"id": 7,
+"image": "https://s20.postimg.cc/ww3a8ijbd/image-7.jpg",
+"name": "Fanta orange drink in the amount of 0.3 liters",
+"price": 1150
+},
+{
+"id": 8,
+"image": "https://s20.postimg.cc/qv5lbfh9l/image-8.jpg",
+"name": "Wafer with Tom Peach banana flavor, amount of 65 g",
+"price": 1800
+},
+{
+"id": 9,
+"image": "https://s20.postimg.cc/dr00yrk2x/image-9.jpg",
+"name": "Cavendish and Harvey apple candy in the amount of 200 grams",
+"price": 12000
+},
+{
+"id": 10,
+"image": "https://s20.postimg.cc/tp8qowm0p/image-10.jpg",
+"name": "Dried sour cherries in the amount of 90 grams",
+"price": 3800
+},
+{
+"id": 11,
+"image": "https://s20.postimg.cc/icw574srd/image-11.jpg",
+"name": "Wafers with Copa Milk chocolate coating, 30 pieces",
+"price": 30000
+},
+{
+"id": 12,
+"image": "https://s20.postimg.cc/eta7hbibt/image-12.jpg",
+"name": "Puta pepper chips in the amount of 100 grams",
+"price": 7900
+}
+],
+"rate_average": 3.75,
+"rate_count": 116
+}
