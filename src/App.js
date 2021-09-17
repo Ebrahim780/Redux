@@ -24,11 +24,17 @@
 
 // Project
 import React from 'react';
+import Header from './Project/techno-market/components/header';
+import './Project/techno-market/styles/bootstrap.rtl.min.css'
 
 const App = () => {
     return (
-        <div className="App">
-
+        <div className="container-fluid bg-light">
+            <main>
+                <Header/>
+            </main>
         </div>
     )
 }
+
+export default App;

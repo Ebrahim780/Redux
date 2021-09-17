@@ -3,6 +3,8 @@
   font-family: 'Vazir', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
@@ -16,8 +18,7 @@ body {
   margin                 : 0;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
-  direction: rtl;
-  padding: 5px;
+  color: #575757;
 }
 
 code {
@@ -44,4 +45,51 @@ button {
 
 button:active {
   transform: scale(.9);
+}
+
+
+/* Custome Styles */
+
+/* main */
+main {
+  padding: 100px 15%;
+  min-height: 100vh;
+}
+
+/* header */
+
+.header .logo {
+  width: 100px;
+  height: 100px;
+  margin-top: -75px;
+}
+
+.hidden-box {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 27px 0;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+}
+
+.css-d0uhtl {
+  margin-bottom: 10px;
+}
+
+
+/* footer */
+
+
+
+
+/* media screen */
+@media screen and (max-width: 768px) {
+  main {
+    padding: 100px 3vw;
+  }
 }
