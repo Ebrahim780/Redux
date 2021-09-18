@@ -27,6 +27,7 @@ import React from 'react';
 import Header from './Project/techno-market/components/header';
 import Items from './Project/techno-market/components/items';
 import './Project/techno-market/styles/bootstrap.rtl.min.css'
+import './Project/techno-market/styles/style.css'
 
 const App = () => {
     return (
