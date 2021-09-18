@@ -25,6 +25,7 @@
 // Project
 import React from 'react';
 import Header from './Project/techno-market/components/header';
+import Items from './Project/techno-market/components/items';
 import './Project/techno-market/styles/bootstrap.rtl.min.css'
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
         <div className="container-fluid bg-light">
             <main>
                 <Header/>
+                <Items/>
             </main>
         </div>
     )
