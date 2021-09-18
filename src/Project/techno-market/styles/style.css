@@ -1,5 +1,4 @@
 /* header */
-
 .header .logo {
     width     : 100px;
     height    : 100px;
@@ -11,12 +10,12 @@
     max-width: 100%;
     overflow : hidden;
     position : relative;
-    margin   : 27px 0;
 }
 
 .logo-image {
     width : 100%;
     height: 100%;
+    margin-top: 27px;
 }
 
 .css-d0uhtl {
@@ -59,10 +58,38 @@ main {
 
 
 /* footer */
-
 .footer {
     height: 50px;
     background-color: #19a4e1;
+}
+
+.footer .col-4 {
+    height: 100%;
+}
+
+.col-4 h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.count , .col-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart .count {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0,0,0,.3)!important;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.cart .cart-image {
+    width: 25px;
+    height: 25px;
 }
 
 

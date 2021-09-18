@@ -24,6 +24,7 @@
 
 // Project
 import React from 'react';
+import Footer from './Project/techno-market/components/footer';
 import Header from './Project/techno-market/components/header';
 import Items from './Project/techno-market/components/items';
 import './Project/techno-market/styles/bootstrap.rtl.min.css'
@@ -33,9 +34,10 @@ const App = () => {
     return (
         <div className="container-fluid bg-light">
             <main>
-                <Header/>
-                <Items/>
+                <Header />
+                <Items />
             </main>
+            <Footer />
         </div>
     )
 }
