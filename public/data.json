@@ -10,84 +10,84 @@
             "id": 1,
             "image": "https://s20.postimg.cc/zdf1frg2h/image-1.jpg",
             "name": "میان وعده پنیر چی توز",
-            "amount": " 115 گرم",
+            "amount": "115 گرم",
             "price": 2500
         },
         {
             "id": 2,
             "image": "https://s20.postimg.cc/v4abdkpnt/image-2.jpg",
-            "name": "چیپس ماست پوتا به مقدار",
-            "amount": " 100 گرم",
+            "name": "چیپس ماست پوتا",
+            "amount": "100 گرم",
             "price": 7900
         },
         {
             "id": 3,
             "image": "https://s20.postimg.cc/gxukicmih/image-3.jpg",
             "name": "چیپس و موسیر ماست",
-            "amount": " 110 گرم",
+            "amount": "110 گرم",
             "price": 5800
         },
         {
             "id": 4,
             "image": "https://s20.postimg.cc/de8msjrih/image-4.jpg",
             "name": "کیک کاکائویی رویال وانیلی نجوا",
-            "amount": " 90 گرم",
+            "amount": "90 گرم",
             "price": 1500
         },
         {
             "id": 5,
             "image": "https://s20.postimg.cc/a7e38xu7t/image-5.jpg",
             "name": "حلوا ارده شکری عقاب",
-            "amount": " 50 گرم",
+            "amount": "50 گرم",
             "price": 1700
         },
         {
             "id": 6,
             "image": "https://s20.postimg.cc/rxfrtzn89/image-6.jpg",
-            "name": "آدامس دراژی بدون قند با طعم دهنده گیاهی با طعم نعناع",
+            "name": "آدامس دراژی بدون قند",
             "amount": "15 گرم",
             "price": 2800
         },
         {
             "id": 7,
             "image": "https://s20.postimg.cc/ww3a8ijbd/image-7.jpg",
-            "name": "نوشیدنی پرتقال فانتا به مقدار",
-            "amount": " 0.3 لیتر",
+            "name": "نوشیدنی پرتقال فانتا",
+            "amount": "0.3 لیتر",
             "price": 1150
         },
         {
             "id": 8,
             "image": "https://s20.postimg.cc/qv5lbfh9l/image-8.jpg",
-            "name": "ویفر با طعم موز تام هلو ، مقدار",
-            "amount": " 65 گرم",
+            "name": "ویفر با طعم موز تام هلو",
+            "amount": "65 گرم",
             "price": 1800
         },
         {
             "id": 9,
             "image": "https://s20.postimg.cc/dr00yrk2x/image-9.jpg",
-            "name": "آب نبات سیب کاوندیش و هاروی به مقدار",
-            "amount": " 200 گرم",
+            "name": "آب نبات سیب کاوندیش و هاروی",
+            "amount": "200 گرم",
             "price": 12000
         },
         {
             "id": 10,
             "image": "https://s20.postimg.cc/tp8qowm0p/image-10.jpg",
             "name": "آلبالو خشک به میزان",
-            "amount": " 90 گرم",
+            "amount": "90 گرم",
             "price": 3800
         },
         {
             "id": 11,
             "image": "https://s20.postimg.cc/icw574srd/image-11.jpg",
-            "name": "ویفر با روکش شکلاتی Copa Milk",
-            "amount": " 30 عدد",
+            "name": "ویفر با روکش شکلاتی",
+            "amount": "30 عدد",
             "price": 30000
         },
         {
             "id": 12,
             "image": "https://s20.postimg.cc/eta7hbibt/image-12.jpg",
-            "name": "ویفر با روکش شکلاتی Copa Milk",
-            "amount": " 30 عدد",
+            "name": "چیپس فلفل پوتا",
+            "amount": "100 گرم",
             "price": 7900
         }
     ]

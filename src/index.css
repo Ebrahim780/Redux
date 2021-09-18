@@ -51,6 +51,31 @@ button:active {
 
 /* Custome Styles */
 
+/* header */
+
+.header .logo {
+  width: 100px;
+  height: 100px;
+  margin-top: -75px;
+}
+
+.hidden-box {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 27px 0;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+}
+
+.css-d0uhtl {
+  margin-bottom: 10px;
+}
+
 /* main */
 main {
   padding: 100px 15%;
@@ -78,36 +103,11 @@ main {
 
 .pointer-event {
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .pointer-event:active {
-  filter: invert(1);
-}
-
-/* header */
-
-.header .logo {
-  width: 100px;
-  height: 100px;
-  margin-top: -75px;
-}
-
-.hidden-box {
-  display: inline-block;
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-  margin: 27px 0;
-}
-
-.logo-image {
-  width: 100%;
-  height: 100%;
-}
-
-.css-d0uhtl {
-  margin-bottom: 10px;
+  opacity: 50%;
 }
 
 
