@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { API } from '../../../api';
+import { API } from './api';
 import React, { useEffect, useState } from "react";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
