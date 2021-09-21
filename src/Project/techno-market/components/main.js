@@ -3,26 +3,30 @@ import basket from './../icons/cart.png';
 import logo from './../icons/logo.png';
 import HoverRating from './rating';
 import axios from 'axios';
+import LoaderHuge from './loader';
+import { Dimmer } from 'semantic-ui-react';
 
 const Main = () => {
 
-    // const [loading, setLoading] = useState(false)
     const [info, setInfo] = useState('')
     const [cart, setCart] = useState([])
     const [cartTotal, setCartTotal] = useState(0)
+    const [loading, setLoading] = useState(false)
 
     const api = axios.create({
         baseURL: 'https://run.mocky.io/v3/a8d03157-a077-44db-9746-695e18a7549e'
     })
-    
+
     useEffect(() => {
         if (!info.id) {
             api.get('/')
                 .then(res => {
                     setInfo(res.data)
+                    setLoading(true)
                     console.log('SUCCESS!')
                 })
                 .catch(error => {
+                    setLoading(false)
                     console.log('FAILURE!')
                 })
         }
@@ -49,7 +53,7 @@ const Main = () => {
 
     const total = () => {
         let totalVal = 0;
-        for(let i = 0; i < cart.length; i++) {
+        for (let i = 0; i < cart.length; i++) {
             totalVal += cart[i].price;
         }
         api.put('/', setCartTotal(totalVal))
@@ -57,6 +61,9 @@ const Main = () => {
 
     return (
         <div className="container-fluid bg-light">
+            {!loading &&
+                <LoaderHuge />
+            }
             <main>
                 <header className="row header justify-content-center align-items-center px-2">
                     <div className="col-12 bg-white shadow d-flex flex-column justify-content-center align-items-center p-2">
@@ -80,7 +87,6 @@ const Main = () => {
                         </div>
                     </div>
                 </header>
-
                 <div className="row items my-3 g-3">
                     {(info && info.products.length) && info.products.map(product => {
                         return (
@@ -94,12 +100,12 @@ const Main = () => {
                                     </span>
                                     <div className="counter rounded border border-1 row my-2">
                                         <div className="col-4 h-100 d-flex justify-content-center align-items-center pointer-event"
-                                        onClick={() => addCart(product)} >+</div>
+                                            onClick={() => addCart(product)} >+</div>
                                         <div className="col-4 h-100 d-flex justify-content-center align-items-center bg-light">
                                             {cart.filter(db => db.id === product.id).length}
                                         </div>
                                         <div className="col-4 h-100 d-flex justify-content-center align-items-center pointer-event"
-                                        onClick={ () => removeCart(product)}>-</div>
+                                            onClick={() => removeCart(product)}>-</div>
                                     </div>
                                 </div>
                             </div>
@@ -107,9 +113,7 @@ const Main = () => {
                     }
                     )}
                 </div>
-
             </main>
-
             <footer className="footer row justify-content-center align-items-center text-white text-center">
                 <div className="col-4">
                     <span>$</span>

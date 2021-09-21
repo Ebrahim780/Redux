@@ -1,12 +1,3 @@
-import Head from 'next/head'
-import { API } from './api';
-import React, { useEffect, useState } from "react";
-import Loader from "react-loader-spinner";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import { Rate } from 'rsuite';
-import 'rsuite/dist/styles/rsuite-default.css';
-import Image from 'next/image';
-
 export default function Home() {
     const [data, setData] = useState('');
     const [loading, setLoading] = useState(false);
@@ -63,7 +54,7 @@ export default function Home() {
                     color="#00BFFF"
                     height={100}
                     width={100}
-                    timeout={1000}
+                    timeout={1000} // 1 sec
                     className="loading"
                 />
             }
