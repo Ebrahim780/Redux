@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import 'semantic-ui-css/semantic.min.css';
 import basket from './../icons/cart.png';
 import logo from './../icons/logo.png';
 import HoverRating from './rating';
 import axios from 'axios';
 import LoaderHuge from './loader';
-import { Dimmer } from 'semantic-ui-react';
 
 const Main = () => {
 
@@ -114,7 +114,7 @@ const Main = () => {
                     )}
                 </div>
             </main>
-            <footer className="footer row justify-content-center align-items-center text-white text-center">
+            <footer className="footer row justify-content-around align-items-center text-white text-center">
                 <div className="col-4">
                     <span>$</span>
                     <strong className="h6 ms-2 m-0">
