@@ -22,23 +22,16 @@
 
 
 
-// Project
+// Techno-market
+import './index.css';
 import React from 'react';
-import Footer from './Project/techno-market/components/footer';
-import Header from './Project/techno-market/components/header';
-import Items from './Project/techno-market/components/items';
-import './Project/techno-market/styles/bootstrap.rtl.min.css'
+import Main from './Project/techno-market/components/main';
+import './Project/techno-market/styles/bootstrap.min.css'
 import './Project/techno-market/styles/style.css'
 
 const App = () => {
     return (
-        <div className="container-fluid bg-light">
-            <main>
-                <Header />
-                <Items />
-            </main>
-            <Footer />
-        </div>
+        <Main />
     )
 }
 

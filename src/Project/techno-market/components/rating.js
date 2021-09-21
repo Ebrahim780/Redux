@@ -38,7 +38,7 @@ export default function HoverRating() {
                 alignItems: 'center'
             }}
         >
-            <span className="ms-3 mb-2">116</span>
+            <span className="me-3 mb-2">116</span>
             <Rating
                 size="large"
                 name="hover-feedback"

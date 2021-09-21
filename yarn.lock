@@ -6007,6 +6007,11 @@
     "inherits" "^2.0.1"
     "readable-stream" "^3.1.1"
 
+"http-const@^1.0.3":
+  "integrity" "sha1-zxVJbI9datRHC3HWWHGSK4RZ25s="
+  "resolved" "https://registry.npmjs.org/http-const/-/http-const-1.0.3.tgz"
+  "version" "1.0.3"
+
 "http-deceiver@^1.2.7":
   "integrity" "sha1-+nFolEq5pRnTN8sL7HKE3D5yPYc="
   "resolved" "https://registry.npmjs.org/http-deceiver/-/http-deceiver-1.2.7.tgz"
@@ -6067,6 +6072,14 @@
     "eventemitter3" "^4.0.0"
     "follow-redirects" "^1.0.0"
     "requires-port" "^1.0.0"
+
+"http-request-builder@^2.0.0-alpha":
+  "integrity" "sha512-vzKHkRSIPGBj7dz9TewxIOxHF/EhShpv5yaqd82yYi6uZePjb3TzS9X/AlSjx6kyHJ2WKazJtVTSxkTR1JiCrQ=="
+  "resolved" "https://registry.npmjs.org/http-request-builder/-/http-request-builder-2.0.0-alpha.tgz"
+  "version" "2.0.0-alpha"
+  dependencies:
+    "http-const" "^1.0.3"
+    "lodash" "^4.17.11"
 
 "http-signature@~1.2.0":
   "integrity" "sha1-muzZJRFHcvPZW2WmCruPfBj7rOE="
