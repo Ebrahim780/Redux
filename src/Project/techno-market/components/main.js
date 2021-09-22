@@ -3,8 +3,8 @@ import 'semantic-ui-css/semantic.min.css';
 import basket from './../icons/cart.png';
 import logo from './../icons/logo.png';
 import HoverRating from './rating';
-import axios from 'axios';
 import LoaderHuge from './loader';
+import axios from 'axios';
 
 const Main = () => {
 
@@ -19,7 +19,7 @@ const Main = () => {
 
     useEffect(() => {
         if (!info.id) {
-            api.get('/')
+            api.get()
                 .then(res => {
                     setInfo(res.data)
                     setLoading(true)
@@ -36,7 +36,7 @@ const Main = () => {
     }, [cart])
 
     const addCart = (element) => {
-        api.post('/', setCart([...cart, element]))
+        setCart([...cart, element])
     }
 
     const removeCart = (element) => {
@@ -44,7 +44,7 @@ const Main = () => {
         let otherItems = copy.filter(cartItem => cartItem.id !== element.id)
         let removeOne = copy.filter(i => i.id === element.id)
         removeOne.pop();
-        api.delete('/', setCart([...otherItems, ...removeOne]))
+        setCart([...otherItems, ...removeOne])
     }
 
     const total = () => {
@@ -52,7 +52,7 @@ const Main = () => {
         for (let i = 0; i < cart.length; i++) {
             totalVal += cart[i].price;
         }
-        api.put('/', setCartTotal(totalVal))
+        setCartTotal(totalVal)
     }
 
     return (
