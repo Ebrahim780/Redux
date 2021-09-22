@@ -36,11 +36,7 @@ const Main = () => {
     }, [cart])
 
     const addCart = (element) => {
-        api.post('/', setCart([...cart, element])
-        ).then(res => {
-            setInfo(res.data)
-            console.log(cart)
-        })
+        api.post('/', setCart([...cart, element]))
     }
 
     const removeCart = (element) => {
@@ -73,7 +69,7 @@ const Main = () => {
                             </div>
                         </div>
                         <div className="title my-2">
-                            <h1 className="h3">
+                            <h1 className="h2">
                                 {info.name}
                             </h1>
                         </div>
@@ -81,7 +77,7 @@ const Main = () => {
                             <HoverRating />
                         </div>
                         <div className="address">
-                            <h6 className="my-2 ">
+                            <h6 className="my-2 fw-bolder">
                                 {info.address}
                             </h6>
                         </div>
@@ -128,8 +124,8 @@ const Main = () => {
                     <div className="count">
                         {cart.length}
                     </div>
-                    <img src={basket} alt="cart" className="cart-image" />
                     <div className="hidden-box">
+                        <img src={basket} alt="cart" className="cart-image" />
                     </div>
                 </div>
             </footer>
