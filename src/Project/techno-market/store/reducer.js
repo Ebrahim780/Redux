@@ -23,10 +23,10 @@ const slice = createSlice({
             return { ...products, carts: [...otherItems, ...removeOne] }
         },
 
-        total: products => {                      // مشکل داره
+        total: (products, action) => {                      // مشکل داره
             var totalVal = 0;
-            for (let i = 0; i < products.carts.length; i++) {
-                totalVal += products.carts[i].price;
+            for (let i = 0; i < action.payload.length; i++) {
+                totalVal += action.payload[i].price;
             }
             return {...products, cartTotal: totalVal}
         }
