@@ -2,15 +2,20 @@ import React, { useState, useEffect } from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import basket from './../icons/cart.png';
 import logo from './../icons/logo.png';
-import HoverRating from './rating';
-import LoaderHuge from './loader';
+import HoverRating from './rating.jsx';
+import LoaderHuge from './loader.jsx';
 import axios from 'axios';
+
+// store
+import store from './../store';
+import { addCart, removeCart, total } from '../store/reducer';
+
 
 const Main = () => {
 
+    const cart = store.getState().carts;
+    const cartTotal = store.getState().cartTotal;
     const [info, setInfo] = useState('')
-    const [cart, setCart] = useState([])
-    const [cartTotal, setCartTotal] = useState(0)
     const [loading, setLoading] = useState(false)
 
     const api = axios.create({
@@ -30,30 +35,10 @@ const Main = () => {
                     console.log('FAILURE!')
                 })
         }
-
-        total();
+        console.log(store.getState())
+        store.dispatch(total(cart))
 
     }, [cart])
-
-    const addCart = (element) => {
-        setCart([...cart, element])
-    }
-
-    const removeCart = (element) => {
-        let copy = [...cart];
-        let otherItems = copy.filter(cartItem => cartItem.id !== element.id)
-        let removeOne = copy.filter(i => i.id === element.id)
-        removeOne.pop();
-        setCart([...otherItems, ...removeOne])
-    }
-
-    const total = () => {
-        let totalVal = 0;
-        for (let i = 0; i < cart.length; i++) {
-            totalVal += cart[i].price;
-        }
-        setCartTotal(totalVal)
-    }
 
     return (
         <div className="container-fluid bg-light">
@@ -96,12 +81,12 @@ const Main = () => {
                                     </span>
                                     <div className="counter rounded border border-1 row my-2">
                                         <div className="col-4 h-100 d-flex justify-content-center align-items-center pointer-event"
-                                            onClick={() => addCart(product)} >+</div>
+                                            onClick={() => store.dispatch(addCart(product))} >+</div>
                                         <div className="col-4 h-100 d-flex justify-content-center align-items-center bg-light">
                                             {cart.filter(db => db.id === product.id).length}
                                         </div>
                                         <div className="col-4 h-100 d-flex justify-content-center align-items-center pointer-event"
-                                            onClick={() => removeCart(product)}>-</div>
+                                            onClick={() => store.dispatch(removeCart(product))}>-</div>
                                     </div>
                                 </div>
                             </div>
