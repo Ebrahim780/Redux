@@ -36,7 +36,7 @@ const Main = () => {
                 })
         }
         console.log(store.getState())
-        store.dispatch(total(cart))
+        store.dispatch(total())
 
     }, [cart])
 
