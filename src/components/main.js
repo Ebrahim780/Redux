@@ -13,7 +13,7 @@ import { addCart, removeCart, total } from '../store/reducer';
 
 const Main = () => {
 
-    const cart = store.getState().carts;
+    const cart = store.getState().cart;
     const cartTotal = store.getState().cartTotal;
     const [info, setInfo] = useState('')
     const [loading, setLoading] = useState(false)
@@ -36,7 +36,7 @@ const Main = () => {
                 })
         }
         console.log(store.getState())
-        store.dispatch(total([...cart]))
+        store.dispatch(total(...cart))
 
     }, [cart])
 
