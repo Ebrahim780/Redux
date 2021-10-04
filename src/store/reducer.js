@@ -19,11 +19,14 @@ export const total = payload => ({
 const reducer = (state = { cart: [], cartTotal: 0 }, action) => {
     switch (action.type) {
         case 'ADD_CART':
-            return {...state,
-                cart: [{
-                    id: action.payload.id,
-                    price: action.payload.price
-                }]
+            return {
+                cart: [
+                    ...state.cart,
+                    {
+                        id: action.payload.id,
+                        price: action.payload.price
+                    }
+                ]
             }
 
         case 'REMOVE_CART':

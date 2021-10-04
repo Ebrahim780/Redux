@@ -5,6 +5,7 @@ import logo from './../icons/logo.png';
 import HoverRating from './rating.jsx';
 import LoaderHuge from './loader.jsx';
 import axios from 'axios';
+import { useSelector } from 'react-redux';
 
 // store
 import store from './../store';
@@ -13,7 +14,8 @@ import { addCart, removeCart, total } from '../store/reducer';
 
 const Main = () => {
 
-    const cart = store.getState().cart;
+    const cart = useSelector(state => state);
+    console.log(store)
     const cartTotal = store.getState().cartTotal;
     const [info, setInfo] = useState('')
     const [loading, setLoading] = useState(false)
@@ -35,8 +37,8 @@ const Main = () => {
                     console.log('FAILURE!')
                 })
         }
-        console.log(store.getState())
-        store.dispatch(total(...cart))
+        // console.log(store.getState())
+        store.dispatch(total(cart))
 
     }, [cart])
 
