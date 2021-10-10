@@ -10,7 +10,7 @@ export const removeCart = payload => ({
 })
 
 export const total = payload => ({
-    type: 'TOTOAL_CART',
+    type: 'TOTAL_CART',
     payload
 })
 
@@ -36,12 +36,12 @@ const reducer = (state = { cart: [], cartTotal: 0 }, action) => {
             removeOne.pop();
             return { ...state, cart: [...otherItems, ...removeOne] }
 
-        case 'ToTAL_CART':
-            var totalVal = 0;
+        case 'TOTAL_CART':
+            let totalVal = 0;
             for (let i = 0; i < action.payload.length; i++) {
                 totalVal += action.payload[i].price;
             }
-            return { ...state, cartTotal: totalVal }
+            return {...state, cartTotal: totalVal }
 
         default:
             return state

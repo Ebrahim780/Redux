@@ -14,9 +14,8 @@ import { addCart, removeCart, total } from '../store/reducer';
 
 const Main = () => {
 
-    const cart = useSelector(state => state);
-    console.log(store)
-    const cartTotal = store.getState().cartTotal;
+    const cart = useSelector(state => state.cart);
+    const cartTotal = useSelector(state => state.cartTotal);
     const [info, setInfo] = useState('')
     const [loading, setLoading] = useState(false)
 
@@ -37,7 +36,7 @@ const Main = () => {
                     console.log('FAILURE!')
                 })
         }
-        // console.log(store.getState())
+        console.log(store.getState())
         store.dispatch(total(cart))
 
     }, [cart])
