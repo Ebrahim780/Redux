@@ -24,6 +24,7 @@ const Main = () => {
     })
 
     useEffect(() => {
+        // eslint-disable-next-line
         if (!info.id) {
             api.get()
                 .then(res => {
@@ -38,7 +39,7 @@ const Main = () => {
         }
         console.log(store.getState())
         store.dispatch(total(cart))
-
+        // eslint-disable-next-line
     }, [cart])
 
     return (
