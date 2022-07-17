@@ -1,30 +1,55 @@
+* {
+    font-family: 'Vazir', 'Segoe UI', 'Ubuntu', sans-serif;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir.woff') format('woff'),
+        url('../fonts/Vazir.ttf') format('truetype');
+}
+
+body {
+    text-align: center;
+    color: #575757 !important;
+    font-size: 14px !important;
+}
+
+button {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:active {
+    transform: scale(.9);
+}
+
 /* header */
 .header .logo {
-    width     : 100px;
-    height    : 100px;
+    width: 100px;
+    height: 100px;
     margin-top: -75px;
 }
 
 .hidden-box {
-    display  : inline-block;
+    display: inline-block;
     max-width: 100%;
-    overflow : hidden;
-    position : relative;
+    overflow: hidden;
+    position: relative;
 }
 
 .logo-image {
-    width     : 100%;
-    height    : 100%;
+    width: 100%;
+    height: 100%;
     margin-top: 27px;
-}
-
-.css-d0uhtl {
-    margin-bottom: 10px;
 }
 
 /* main */
 main {
-    padding   : 100px 15%;
+    padding: 100px 15%;
     min-height: 100vh;
 }
 
@@ -33,18 +58,18 @@ main {
 }
 
 .item .counter {
-    width : 70%;
+    width: 70%;
     height: 35px;
 }
 
 .item img {
-    width     : 100%;
+    width: 100%;
     max-height: 60%;
     object-fit: contain;
 }
 
 .pointer-event {
-    cursor    : pointer;
+    cursor: pointer;
     transition: 0.1s;
 }
 
@@ -55,7 +80,7 @@ main {
 
 /* footer */
 .footer {
-    height          : 50px;
+    height: 50px;
     background-color: #19a4e1;
 }
 
@@ -64,28 +89,28 @@ main {
 }
 
 .col-4 h6 {
-    padding    : 0;
-    margin     : 0;
+    padding: 0;
+    margin: 0;
     font-weight: bolder;
 }
 
 .count,
 .col-4 {
-    display        : flex;
-    align-items    : center;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .cart .count {
-    width           : 35px;
-    height          : 35px;
+    width: 35px;
+    height: 35px;
     background-color: rgba(0, 0, 0, .3) !important;
-    border-radius   : 50%;
-    margin-right    : 10px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .cart .cart-image {
-    width : 25px;
+    width: 25px;
     height: 25px;
 }
 
