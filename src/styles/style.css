@@ -1,12 +1,12 @@
 * {
-    font-family: 'Vazir', 'Segoe UI', 'Ubuntu', sans-serif;
+    font-family: Vazir, 'Segoe UI', 'Ubuntu', sans-serif;
     outline: none;
     padding: 0;
     margin: 0;
 }
 
 @font-face {
-    font-family: 'Vazir';
+    font-family: Vazir;
     src: url('../fonts/Vazir.woff') format('woff'),
         url('../fonts/Vazir.ttf') format('truetype');
 }
